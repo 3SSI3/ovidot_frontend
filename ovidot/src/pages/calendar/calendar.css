@@ -1,0 +1,42 @@
+.App {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.calendar-btn {
+    color: black;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    background-color: violet;
+    border-radius: 1.5rem;
+    transition: var(--transition);
+    
+}
+
+.calendar-btn:hover {
+    background: peachpuff;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.txt__field input {
+    width: 80%;
+    padding: 0.9rem 2rem;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 1.5rem;
+    background: white;
+    
+}
+
+.txt__field DatePicker {
+    position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
