@@ -23,11 +23,18 @@
     margin-bottom: 1rem;
     color: var(--color-secondary);
     font-weight: 400;
+    
+}
+
+.main__header-left h1 {
+    padding-left: 1rem;
+    font-weight: bold;
 }
 
 .main__header-left p {
     margin: 1rem 0 3.5rem;
-    font-size: 1.1rem;
+    font-size: 2rem;
+    font-family: 'Dancing Script';
 }
 .main__header-right {
     display: grid;
@@ -39,9 +46,47 @@
     width: 50%;
 }
 
-/* apply on responsive design*/
-@media (max-width: 768px) {
-    .main__header-image {
-        width: 100%
+/* apply on responsive design
+@media screen and (max-width: 600px) {
+    /*.main__header-left {
+        max-width: 100%;
+        text-align: center;
     }
+    .main__header {
+        height:100vh;
+    }
+
+}*/
+
+/*======== MEDIA QUERIES (medium screens) ========*/
+@media screen and (max-width: 1024px) {
+/*MAIN HEADER*/
+.main__header {
+    height: fit-content;
+    padding: 12rem 0;
+}
+
+.main__header-container {
+    gap: 0;
+    grid-template-columns: 1fr;
+}
+
+.main__header-left p {
+    text-align: center;
+    text-decoration: wavy;
+    font-size: 1.5rem;
+}
+
+.main__header-left h1 {
+    font-size: 3rem;
+}
+
+.main__header-image {
+    display: none;
+}
+
+.main__header .btn {
+    font-size: 1.5rem;
+}
+    
 }

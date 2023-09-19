@@ -18,8 +18,8 @@ export const links = [
         path: '/contact'
     },
     {
-        name: "Tips",
-        path: '/tips'
+        name: "Register",
+        path: '/register'
     },
     {
         name: "Settings",

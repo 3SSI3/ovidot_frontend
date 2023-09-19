@@ -4,7 +4,7 @@ import About from './pages/about/About'
 import Calendar from './pages/calendar/Calendar'
 import Contact from './pages/contact/Contact'
 import Settings from './pages/settings/Settings'
-import Tips from './pages/tips/Tips'
+import Register from './pages/register/Register'
 import NotFound from './pages/notFound/NotFound' 
 import Navbar from './components/Navbar'
 
@@ -18,8 +18,8 @@ const App = () => {
         <Route path='contact' element={<Contact/>} />
         <Route path='calendar' element={<Calendar/>} />
         <Route path='settings' element={<Settings/>} />
-        <Route path='tips' element={<Tips/>} />
-        <Route path='*' element={<NotFound/>} />
+        <Route path='register' element={<Register/>} />
+  <Route path='*' element={<NotFound/>} />
       </Routes>
     </BrowserRouter>
   )

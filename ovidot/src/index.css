@@ -22,7 +22,7 @@
   --color-gray-600: hsl(var(--gray-hue), 48%, 15%);
 
   --container-width-lg: 80%;
-  --container-width-mg: 90%; /*mobile and tablet*/
+  --container-width-md: 90%; /*mobile and tablet*/
 
   --transition: all 500ms ease;
 
@@ -34,7 +34,7 @@ body {
   /*background-image: url(./images/wallpaper.png);*/
   /*background-size: auto;*/ 
   background:var(--color-gray-100);
-  font-family: 'EB Garamond', sans-serif;
+  font-family: 'EB Garamond', 'Sacramento', 'Dancing Script' sans-serif;
   color: var(--color-gray-600);
   line-height: 1.7;
   overflow-x: hidden;
@@ -59,14 +59,19 @@ h2 {
   font-size: 2rem;
 }
 
+/*h3 {
+  font-size: 1.5;
+}*/
+
 a {
   color:rgb(5, 52, 122)
 }
 
 img {
-  display: block;
+  display:inline-block;
   object-fit: cover;
-  width: 200%;
+  max-width: 180%;
+  height:auto;
 }
 
 
@@ -84,4 +89,47 @@ img {
 .btn:hover {
   background-color: hotpink;
   color: white;
+}
+
+
+
+/* MEDIA QUERIES (medium screens)*/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md)
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+  /*body {
+    background: blue;
+  }*/
+}
+
+/* MEDIA QUERIES (small screens)*/
+@media screen and (max-width: 600px) {
+  /*.container {
+    width: var(--container-width-md)
+  }*/
+
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+  
+
+  h2 {
+    font-size: 1.6rem;
+  }
+  /*body {
+    background: hotpink;
+  }*/
+  .main__header {
+    text-align: center;
+  }
 }
